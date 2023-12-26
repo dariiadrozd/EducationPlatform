@@ -1,4 +1,4 @@
-import { getAllCoursesDB, getCoursesByIdDB } from "../repository/course.repository";
+import { getAllCoursesDB, getCoursesByIdDB, createCoursesDB } from "../repository/course.repository";
 import { iCourses } from "../interfaces/interfaces";
 
 async function getAllCourses(): Promise <iCourses[]>{
@@ -13,4 +13,10 @@ async function getCoursesById(id:number): Promise<iCourses[]>{
     return data
 }
 
-export { getAllCourses, getCoursesById }
+async function createCourses(name: string, surname: string, email: string, pwd: string): Promise<iCourses[]>{
+    const data = await createCoursesDB(name, surname, email, pwd )
+    if(!DataTransfer.length) throw new Error ('data is empty')
+    return data
+}
+
+export { getAllCourses, getCoursesById, createCourses }
