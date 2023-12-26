@@ -13,8 +13,8 @@ async function getCoursesById(id:number): Promise<iCourses[]>{
     return data
 }
 
-async function createCourses(name: string, surname: string, email: string, pwd: string): Promise<iCourses[]>{
-    const data = await createCoursesDB(name, surname, email, pwd )
+async function createCourses(course:string): Promise<iCourses[]>{
+    const data = await createCoursesDB(course)
     if(!DataTransfer.length) throw new Error ('data is empty')
     return data
 }

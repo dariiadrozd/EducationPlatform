@@ -26,12 +26,13 @@ route.get('/:id', async (req: Request, res: Response): Promise<void> => {
 
 route.post('/', async (req: Request, res: Response): Promise<void> => {
     try {
-        const { name, surname, email, pwd  } = req.body
-        const data = await createCourses(name, surname, email, pwd )
+        const { course } = req.body
+        const data = await createCourses(course)
         buildResponse(res, 200, data)
     } catch (error: any) {
         buildResponse(res, 404, error.message)
     }
 })
+
 
 export default route
