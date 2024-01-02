@@ -1,5 +1,6 @@
 function buildResponse(response, code, message) {
-    response.status(code).send(message);
+    response.status(code);
+    response.send(message);
   }
   
 export default buildResponse;
