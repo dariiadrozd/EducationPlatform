@@ -1,4 +1,4 @@
-import { createCourses, getAllCourses, getCoursesById, updateCourse } from "../../service/course.service";
+import { createCourses, deleteCourseById, getAllCourses, getCoursesById, updateCourse } from "../../service/course.service";
 import * as repository from '../../repository/course.repository'
 import exp from "constants";
 
@@ -91,5 +91,21 @@ describe('updateCourse',()=>{
             expect(error.message).toBe('data is empty')
         }
     })
+})
+
+
+describe('deleteCourseById',()=>{
+
+    test('test delete by id error', async () => {
+        const repFunction = jest.spyOn(repository, 'deleteCourseByIdDB')
+        repFunction.mockResolvedValue([
+            { id: 1, course: 'TS' }
+        ]);
+        const result = await deleteCourseById(1);
+        expect(result[0].id).toBe(1);
+        expect(repFunction).toHaveBeenCalled();
+        expect(result).toHaveLength(1);
+        expect(result).toEqual([{ id: 1, course: 'TS' }]);
+})
 })
 
