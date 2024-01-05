@@ -3,7 +3,7 @@ import { iUser } from '../interfaces/interfaces';
 
 async function getAllUser(): Promise<iUser[]> {
   const data = await getAllUserDB();
-  if (!data.length) throw new Error('');
+  if (!data.length) throw new Error('error');
   return data;
 }
 

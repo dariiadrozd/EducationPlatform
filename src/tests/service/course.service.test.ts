@@ -80,7 +80,7 @@ describe('createCourses', () => {
     })
 })
 
-describe('updateCourse',()=>{
+describe('updateCourse', () => {
 
     test('test update error', async () => {
         const repFunction = jest.spyOn(repository, 'updateCourseDB')
@@ -94,7 +94,7 @@ describe('updateCourse',()=>{
 })
 
 
-describe('deleteCourseById',()=>{
+describe('deleteCourseById', () => {
 
     test('test delete by id error', async () => {
         const repFunction = jest.spyOn(repository, 'deleteCourseByIdDB')
@@ -106,6 +106,6 @@ describe('deleteCourseById',()=>{
         expect(repFunction).toHaveBeenCalled();
         expect(result).toHaveLength(1);
         expect(result).toEqual([{ id: 1, course: 'TS' }]);
-})
+    })
 })
 
