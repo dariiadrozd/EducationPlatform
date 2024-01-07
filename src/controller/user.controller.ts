@@ -1,5 +1,5 @@
 import express, { Request, Response } from 'express';
-import { getAllUser, getUserById, updateUser, deleteUser} from '../service/user.service';
+import { getAllUser, getUserById, updateUser, deleteUser, createUser} from '../service/user.service';
 import buildResponse from '../helper/buildResponse';
 
 const route = express.Router();
@@ -22,6 +22,16 @@ route.get('/:id', async (req: Request, res: Response): Promise<void> => {
     buildResponse(res, 404, error.message);
   }
 });
+
+route.post('/', async (req: Request, res: Response) => {
+  try {
+    const { name, surname, email, pwd } = req.body
+    const data = await createUser(name, surname, email, pwd)
+    buildResponse(res, 200, data);
+  } catch (error: any) {
+    buildResponse(res, 404, error.message);
+  }
+})
 
 route.put('/:id', async (req: Request, res: Response): Promise<void> => {
   try {
@@ -47,3 +57,5 @@ route.delete('/:id', async (req: Request, res: Response): Promise<void> => {
 });
 
 export default route;
+
+
