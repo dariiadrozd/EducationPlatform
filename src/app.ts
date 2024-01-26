@@ -3,7 +3,7 @@ import bodyParser from "body-parser";
 import cors from "cors";
 import user from "./controller/user.controller";
 import api from './controller/api.controller';
-import course from './controller/course.controller'
+import course from './controller/course.controller';
 
 const app = express();
 
