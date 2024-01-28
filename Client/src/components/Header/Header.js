@@ -1,4 +1,5 @@
-import style from './style.module.css'
+import React from 'react';
+import style from './style.module.css';
 
 function Header() {
     return (
@@ -9,7 +10,7 @@ function Header() {
                 <div className={style.reg}>Sign Up</div>
             </div>
         </div>
-    )
+    );
 }
 
-export default Header
+export default Header;

@@ -1,0 +1,86 @@
+.wrapper {
+    width: 1220px;
+    margin: 4% auto 0;
+}
+
+.wrapper .previewContent {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.wrapper .previewContent .previewInfo .textPlatform {
+    color: var(--Primaty-Grey-Dark, #757575);
+    font: 700 16px Montserrat;
+    margin-bottom: 24px;
+}
+
+.wrapper .previewContent .previewInfo h1 {
+    width: 550px;
+    color: var(--Primaty-Black, #000);
+    font: 400 56px Dela Gothic One;
+    margin-bottom: 30px;
+}
+
+.wrapper .previewContent .previewInfo .textAdditional {
+    width: 400px;
+    color: var(--Primaty-Grey-Dark, #757575);
+    font: 600 18px Montserrat;
+    margin-bottom: 30px;
+}
+
+.wrapper .previewContent .previewInfo .btn {
+    border-radius: 100px;
+    background: var(--Primaty-Cyan-Light, #c3dce3);
+    color: #2b788b;
+    font: 700 16px "Montserrat";
+    width: 165px;
+    height: 44px;
+    padding-left: 18px;
+    padding-top: 13px;
+    margin-top: 32px;
+  }
+  
+  .wrapper .previewContent .previewInfo .statistics {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+  }
+  
+  .wrapper .previewContent .previewInfo .statistics .imgZipper {
+    background-image: url(./assets/zipper.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 24px;
+    height: 30px;
+  }
+  
+  .wrapper .previewContent .previewInfo .statistics .studentsCount {
+    color: #000;
+    font: 400 40px "Dela Gothic One";
+  }
+  
+  .wrapper .previewContent .previewInfo .statistics .studentsCount span {
+    color: #2b788b;
+    font: 400 40px "Dela Gothic One";
+  }
+  
+  .wrapper .previewContent .previewInfo .textStudents {
+    color: #585858;
+    font: 600 16px "Montserrat";
+    margin-left: 35px;
+  }
+  
+  .wrapper .previewImg {
+    background-image: url(./assets/image_1.png);
+    width: 1100px;
+    height: 601px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 25px;
+    position: relative;
+    z-index: 1;
+    margin-left: -130px;
+  }
+  
+
