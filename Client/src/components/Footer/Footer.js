@@ -1,12 +1,10 @@
 import React from 'react';
-import style from './style.module.css';
 
-function Header() {
+
+function Footer() {
     return (
-        <div className={style.wrapper}>
-
-        </div>
+    <div></div>
     );
 }
 
-export default Header;
+export default Footer;

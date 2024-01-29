@@ -1,4 +1,4 @@
-import style from './stule.module.css'
+import style from './style.module.css'
 
 function Preview() {
     return (
@@ -23,8 +23,30 @@ function Preview() {
 
 
 
-            <div className={style.learnContent}></div>
+            <div className={style.learnContent}>
+
+                <div className={style.learnInfo}>
+                    <div className={style.learnImg}></div>
+                    <div className={style.textStyle}>
+                        <h2>Learn a language in a playful way</h2>
+                        <p>Make learning programming languages more fun with    
+                         mini-games</p>
+                    
+                    <div className={style.downstairsImg}>
+                        <div className={style.sneakersImg}></div>
+                        <div className={style.loudspeakerImg}></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
             <div className={style.knowledgeContent}></div>
+
+
+            
             <div className={style.progressContent}></div>
 
         </div>
