@@ -1,12 +1,17 @@
-.wrapper {
+.wrapper .previewContent,
+.wrapper .learnContent,
+.wrapper .knowledgeContent,
+.wrapper .progressContent {
   width: 1220px;
-  margin: 4% auto 0;
+  margin: auto;
 }
 
 .wrapper .previewContent {
   display: flex;
   justify-content: space-between;
-  
+  height: 680px;
+  background: var(--Primaty-Grey-Light, #f6f5f4);
+  margin-top: 95px;
 }
 
 
@@ -86,15 +91,16 @@
 
 .wrapper .learnContent {
   background: #FFF;
-  margin: auto;
+  width: 100%; 
 }
 
 .wrapper .learnContent .learnInfo {
-  display: flex;
-  justify-content: space-between;
   margin: auto;
-  width: 1220px;
-  height: 600px;
+  display: flex;
+  height: 650px;
+  max-width: 1220px;
+  background: #fff;
+  width: 100%; 
 }
 
 .wrapper .learnContent .learnInfo .learnImg {
@@ -107,16 +113,16 @@
 }
 
 .wrapper .learnContent .learnInfo .textStyle h2 {
+  font: 400 48px "Dela Gothic One";
   width: 540px;
-  height: 120px;
-  color: var(--Primaty-Black, #000);
-  font: 400 48px Dela Gothic One;
   margin-top: 122px;
+  color: var(--Primaty-Black, #000);
 }
 
 .wrapper .learnContent .learnInfo .textStyle p {
   color: var(--Primaty-Grey-Dark, #757575);
-  font: 600 18px Montserrat;
+  font: 600 18px "Montserrat";
+  width: 540px;
   margin-top: 30px;
 }
 
@@ -140,3 +146,109 @@
   width: 172px;
   height: 112px;
 }
+
+.wrapper .knowledgeContent {
+  margin: auto;
+  display: flex;
+  background: var(--Primaty-Grey-Light, #f6f5f4);
+  height: 600px;
+}
+
+.wrapper .knowledgeContent .knowledgeInfo {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  width: 1220px;
+  height: 600px;
+}
+
+.wrapper .knowledgeContent .knowledgeInfo .textBlock h1 {
+  color: var(--Primaty-Black, #000);
+  font: 400 48px Dela Gothic One;
+  width: 474.464px;
+  margin-top: 137px;
+}
+
+.wrapper .knowledgeContent .knowledgeInfo .textBlock p {
+  width: 396.886px;
+  color: var(--Primaty-Grey-Dark, #757575);
+  font: 600 18px Montserrat;
+  margin-bottom: 35px;
+  margin-top: 30px;
+}
+
+.wrapper .knowledgeContent .knowledgeInfo .btn {
+  border-radius: 100px;
+  background: var(--Primaty-Cyan-Light, #c3dce3);
+  padding: 14px 22px;
+  justify-content: center;
+  align-items: center;
+  width: 145px;
+  height: 45px;
+  color: #2b788b;
+  font: 700 16px Montserrat;
+  margin-top: 34px;
+}
+
+
+.wrapper .knowledgeContent .knowledgeInfo .knowledgeImg {
+  background-image: url(./assets/knowledgeImg.png);
+  width: 580px;
+  height: 473.973px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.wrapper .progressContent {
+  margin: auto;
+  background: #fff;
+  margin-top: 150px;
+  width: 100%; 
+}
+
+.wrapper .progressContent .progressInfo {
+  display: flex;
+  height: 600px;
+  max-width: 1220px; 
+  margin: 40px auto;
+  width: 100%; 
+}
+
+.wrapper .progressContent .progressInfo .progressImg {
+  background-image: url(./assets/progressImg.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 680px;
+  height: 400px;
+  margin: 100px 0 0 50px;
+}
+
+
+.wrapper .progressContent .progressInfo .textProgress h2 {
+  color: var(--Primaty-Black, #000);
+  font: 400 48px Dela Gothic One;
+  width: 470px;
+  margin-top: 170px;
+}
+
+.wrapper .progressContent .progressInfo .textProgress p{
+  color: var(--Primaty-Grey-Dark, #757575);
+  font: 600 18px "Montserrat";
+  width: 390px;
+  margin-top: 30px;
+}
+
+.wrapper .progressContent .progressInfo .textProgress .btnProgress{
+  width: 145px;
+  height: 45px;
+  border-radius: 100px;
+  background: var(--Primaty-Cyan-Light, #c3dce3);
+  display: flex;
+  padding: 14px 22px;
+  justify-content: center;
+  align-items: center;
+  color: var(--Primaty-Cyan-Dark, #2b788b);
+  font: 700 16px Montserrat;
+  margin-top: 34px;
+}
+
