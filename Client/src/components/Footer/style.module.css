@@ -1,0 +1,91 @@
+.wrapper {
+    margin: auto;
+    width: 1220px;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.wrapper .infoFooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wrapper .infoFooter .navigation,
+.wrapper .infoFooter .names {
+    display: flex;
+    grid-gap: 30px;
+}
+
+.wrapper .infoFooter .navigation p,
+.wrapper .infoFooter .names p {
+    color: var(--Primaty-Grey-Dark, #757575);
+    font: 600 14px "Montserrat";
+}
+
+
+.wrapper .line {
+    border-top: 1.205px solid var(--Primaty-Grey-Medium, #E0E0E0);
+    height: 1180px;
+    align-self: stretch;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.wrapper .allLitleImg {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.wrapper .allLitleImg .img {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+.wrapper .allLitleImg .catImg,
+.wrapper .allLitleImg .GTimg,
+.wrapper .allLitleImg .youtubeImg {
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 30px;
+    height: 24px;
+}
+
+.wrapper .allLitleImg .catImg {
+    background-image: url(./assets/catImg.png);
+}
+
+.wrapper .allLitleImg .GTimg {
+    background-image: url(./assets/GTimg.png);
+}
+
+.wrapper .allLitleImg .youtubeImg {
+    background-image: url(./assets/youtubeImg.png);
+}
+
+.wrapper .projectFooter {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    grid-gap: 5px;
+}
+
+.wrapper .projectFooter p {
+    color: var(--Primaty-Grey-Dark, #757575);
+    font: 600 12px Montserrat;
+    margin-right: 5px;
+    margin-bottom: 0; 
+}
+
+.wrapper .projectFooter .hschool {
+    color: var(--Primaty-Grey-Dark, #757575);
+    font: 600 12px Montserrat;
+    text-decoration-line: underline;
+    margin-bottom: 0; 
+}
