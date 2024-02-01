@@ -26,12 +26,12 @@ function Footer() {
                     <div className={style.GTimg}></div>
                     <div className={style.youtubeImg}></div>
                 </div>
+                <div className={style.projectFooter}>
+                    <p>©2021 Hschool. Project for </p>
+                    <p className={style.hschool}>Hschool.</p>
+                </div>
             </div>
-            <div className={style.projectFooter}>
-                <p>©2021 Hschool. Project for </p>
-               <p className={style.hschool}>Hschool.</p>
-               </div>
-            </div>
+        </div>
     )
 }
 

@@ -43,7 +43,7 @@ function Preview() {
 
 
             <div className={style.knowledgeContent}>
-                <div className={style.knowledgeInfo}>
+                <div className={style.knowledgeInfo}> 
                     <div className={style.textBlock}>
                         <h1>Increase your knowledge</h1>
                         <p>Traditional and new effective approaches to learning languages</p>

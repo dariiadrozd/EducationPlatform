@@ -1,7 +1,6 @@
 .wrapper {
     margin: auto;
     width: 1220px;
-    height: 160px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -28,10 +27,7 @@
 
 .wrapper .line {
     border-top: 1.205px solid var(--Primaty-Grey-Medium, #E0E0E0);
-    height: 1180px;
-    align-self: stretch;
     margin-top: 20px;
-    margin-bottom: 20px;
 }
 
 .wrapper .allLitleImg {
@@ -44,8 +40,8 @@
 .wrapper .allLitleImg .img {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     gap: 30px;
-    margin-bottom: 20px;
 }
 
 .wrapper .allLitleImg .catImg,
@@ -69,23 +65,24 @@
     background-image: url(./assets/youtubeImg.png);
 }
 
-.wrapper .projectFooter {
+.wrapper .allLitleImg .projectFooter {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     grid-gap: 5px;
+ 
 }
 
-.wrapper .projectFooter p {
+.wrapper .allLitleImg .projectFooter p {
     color: var(--Primaty-Grey-Dark, #757575);
     font: 600 12px Montserrat;
     margin-right: 5px;
-    margin-bottom: 0; 
+    align-items: center;
 }
 
-.wrapper .projectFooter .hschool {
+.wrapper .allLitleImg .projectFooter .hschool {
     color: var(--Primaty-Grey-Dark, #757575);
     font: 600 12px Montserrat;
-    text-decoration-line: underline;
-    margin-bottom: 0; 
+    text-decoration-line: underline; 
+    align-items: center;
 }
