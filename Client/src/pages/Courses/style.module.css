@@ -1,0 +1,167 @@
+.wrapper {
+    height: 1000px;
+}
+
+.wrapper .item .courses {
+    margin: 40px auto;
+    width: 1220px;
+    height: 72px;
+    border-radius: 14px;
+    background: #fff;
+    padding: 20px 0 0 500px;
+}
+
+.wrapper .item .courses .img {
+    background-image: url(./assets/logo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 167px;
+    height: 32px;
+}
+
+.wrapper .item .js {
+    margin: auto;
+    border-radius: 14px;
+    background: #fff;
+    width: 926px;
+    height: 216px;
+    box-shadow: 0px 22.898px 45.796px -11.449px rgba(52, 41, 39, 0.08);
+}
+
+.wrapper .item .itemJS {
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrapper .item .js .itemJS .img {
+    background-image: url(./assets/item.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 337px;
+    height: 216px;
+    border-top-left-radius: 14px;
+    border-bottom-left-radius: 14px;
+}
+
+.wrapper .item .js .itemJS .textBlock {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.wrapper .item .js .itemJS .textBlock h1 {
+    color: #000;
+    font: 400 32px "Dela Gothic One";
+    width: 209px;
+}
+
+.wrapper .item .js .itemJS .textBlock .line {
+    border: 1.22px solid #e0e0e0;
+    width: 540px;
+}
+
+.wrapper .item .js .itemJS .textBlock p {
+    color: var(--Primaty-Grey-Dark, #757575);
+    font: 500 16px "Montserrat";
+    width: 560px;
+    line-height: 25px;
+}
+
+.wrapper .item .ts {
+    margin: 40px auto;
+    border-radius: 14px;
+    background: #fff;
+    width: 926px;
+    height: 216px;
+    box-shadow: 0px 22.898px 45.796px -11.449px rgba(52, 41, 39, 0.08);
+}
+
+.wrapper .item .ts .itemTS {
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrapper .item .ts .itemTS .img {
+    background-image: url(./assets/item.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 337px;
+    height: 216px;
+    border-top-left-radius: 14px;
+    border-bottom-left-radius: 14px;
+}
+
+.wrapper .item .ts .itemTS .textBlock h1 {
+    color: #000;
+    font: 400 32px "Dela Gothic One";
+    width: 209px;
+}
+
+.wrapper .item .ts .itemTS .textBlock .line {
+    border: 1.22px solid #e0e0e0;
+    width: 540px;
+}
+
+.wrapper .item .ts .itemTS .textBlock p {
+    color: var(--Primaty-Grey-Dark, #757575);
+    font: 500 16px "Montserrat";
+    width: 560px;
+    line-height: 25px;
+}
+
+.wrapper .item .ts .itemTS .textBlock {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.wrapper .item .python {
+    margin: 40px auto;
+    border-radius: 14px;
+    background: #fff;
+    width: 926px;
+    height: 216px;
+    box-shadow: 0px 22.898px 45.796px -11.449px rgba(52, 41, 39, 0.08);
+}
+
+.wrapper .item .python .itemPython {
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrapper .item .python .itemPython .img {
+    background-image: url(./assets/item.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 337px;
+    height: 216px;
+    border-top-left-radius: 14px;
+    border-bottom-left-radius: 14px;
+}
+
+.wrapper .item .python .itemPython .textBlock h1 {
+    color: #000;
+    font: 400 32px "Dela Gothic One";
+    width: 209px;
+}
+
+.wrapper .item .python .itemPython .textBlock .line {
+    border: 1.22px solid #e0e0e0;
+    width: 540px;
+}
+
+.wrapper .item .python .itemPython .textBlock p {
+    color: var(--Primaty-Grey-Dark, #757575);
+    font: 500 16px "Montserrat";
+    width: 560px;
+    line-height: 25px;
+}
+
+.wrapper .item .python .itemPython .textBlock {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}

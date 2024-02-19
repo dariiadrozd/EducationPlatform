@@ -1,0 +1,147 @@
+.item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrapper{
+    margin: auto;
+    border-radius: 14px;
+    background: #fff;
+    width: 926px;
+    height: 216px;
+    box-shadow: 0px 22.898px 45.796px -11.449px rgba(52, 41, 39, 0.08);
+    margin-bottom: 30px;
+}
+
+.wrapper .item .img1 {
+    background-image: url(./assets/item.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 337px;
+    height: 216px;
+    border-top-left-radius: 14px;
+    border-bottom-left-radius: 14px;
+}
+.wrapper .item .img2 {
+    background-image: url(./assets/logo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 337px;
+    height: 216px;
+    border-top-left-radius: 14px;
+    border-bottom-left-radius: 14px;
+}
+.wrapper .item .img3 {
+    background-image: url(./assets/logo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 337px;
+    height: 216px;
+    border-top-left-radius: 14px;
+    border-bottom-left-radius: 14px;
+}
+
+.wrapper .item .textBlock {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.wrapper .item .textBlock h1 {
+    color: #000;
+    font: 400 32px "Dela Gothic One";
+    width: 209px;
+}
+
+.wrapper .item .textBlock .line {
+    border: 1.22px solid #e0e0e0;
+    width: 540px;
+}
+
+.wrapper .item .textBlock p {
+    color: var(--Primaty-Grey-Dark, #757575);
+    font: 500 16px "Montserrat";
+    width: 560px;
+    line-height: 25px;
+}
+
+.wrapper {
+    margin: 40px auto;
+    border-radius: 14px;
+    background: #fff;
+    width: 926px;
+    height: 216px;
+    box-shadow: 0px 22.898px 45.796px -11.449px rgba(52, 41, 39, 0.08);
+}
+
+.wrapper .item {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.wrapper .item .textBlock h1 {
+    color: #000;
+    font: 400 32px "Dela Gothic One";
+    width: 209px;
+}
+
+.wrapper .item .textBlock .line {
+    border: 1.22px solid #e0e0e0;
+    width: 540px;
+}
+
+.wrapper .item .textBlock p {
+    color: var(--Primaty-Grey-Dark, #757575);
+    font: 500 16px "Montserrat";
+    width: 560px;
+    line-height: 25px;
+}
+
+.wrapper .item .textBlock {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.wrapper {
+    margin: 40px auto;
+    border-radius: 14px;
+    background: #fff;
+    width: 926px;
+    height: 216px;
+    box-shadow: 0px 22.898px 45.796px -11.449px rgba(52, 41, 39, 0.08);
+}
+
+.wrapper .item {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.wrapper .item .textBlock h1 {
+    color: #000;
+    font: 400 32px "Dela Gothic One";
+    width: 209px;
+}
+
+.wrapper .item .textBlock .line {
+    border: 1.22px solid #e0e0e0;
+    width: 540px;
+}
+
+.wrapper .item .textBlock p {
+    color: var(--Primaty-Grey-Dark, #757575);
+    font: 500 16px "Montserrat";
+    width: 560px;
+    line-height: 25px;
+}
+
+.wrapper .item .textBlock {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}

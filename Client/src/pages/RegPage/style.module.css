@@ -1,0 +1,53 @@
+.wrapper {
+    width: 1220px;
+    margin: 4% auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wrapper .reg {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.wrapper .reg h1 {
+    color: var(--Primaty-Black, #000);
+    font: 400 56px "Dela Gothic One";
+}
+
+.wrapper .reg input {
+    border-radius: 2px;
+    border: 1px solid var(--Gray-Gray-4, #CED4DA);
+    width: 519px;
+    height: 60px;
+    padding: 0 12px;
+    color: var(--Gray-Gray-5, #ADB5BD);
+    font: 400 20px Montserrat;
+    background-color: var(--Primaty-Grey-Light, #F6F5F4);
+    outline: none;
+}
+
+.wrapper .reg input:placeholder{
+    color: var(--Gray-Gray-5, #ADB5BD);
+    font: 400 20px Montserrat;
+}
+
+.wrapper .reg .btn {
+    border-radius: 100px;
+    background: var(--Primaty-Cyan-Dark, #2B788B);
+    width: 110px;
+    padding: 12px 0;
+    color: #fff;
+    text-align: center;
+    font: 700 16px Montserrat;
+}
+
+.wrapper .regImg {
+    background-image: url(./assets/image_2024_02_19T19_17_34_294Z.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 481px;
+    height: 320px;
+}
