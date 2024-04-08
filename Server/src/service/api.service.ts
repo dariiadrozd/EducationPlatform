@@ -7,8 +7,11 @@ async function registrationUser(name: string, surname: string, email: string, pw
     const foundUser = await getUserByEmailDB(email);
     if (foundUser.length) throw new Error('user already exists');
 
-    const salt = 10;
+    const salt = 2;
+
+    
     const hashPwd = await bcrypt.hash(pwd, salt);
+    
     const data = await registrationUserDB(name, surname, email, hashPwd);
 
     if (!data.length) throw new Error('no data');

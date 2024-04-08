@@ -2,6 +2,7 @@ import pool from '../db'
 import { iUser } from '../interfaces/interfaces';
 
 async function getUserByEmailDB(email: string): Promise<iUser[]> {
+    
     const client = await pool.connect();
 
     const sql = `select * from users where email = $1`
@@ -25,6 +26,9 @@ async function registrationUserDB(name: string, surname: string, email: string, 
 
         return []
     }
+    finally {
+        client.release();
+      }
 }
 
 export { getUserByEmailDB, registrationUserDB }

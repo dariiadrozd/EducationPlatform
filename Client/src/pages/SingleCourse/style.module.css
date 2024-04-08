@@ -1,0 +1,66 @@
+.allBox {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 100px;
+    .wrapper {
+      width: max-content;
+      background-color: white;
+      border-radius: 10px;
+      padding: 15px;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      .item {
+        display: flex;
+        .img {
+          background-image: url(./assets/imgBooks.svg);
+          background-repeat: no-repeat;
+          background-size: cover;
+          width: 240px;
+          height: 150px;
+        }
+        .infoFromCourses {
+          width: 253px;
+          h1 {
+            font: 400 32px "Dela Gothic One";
+          }
+          p {
+            font: 600 16px "Montserrat";
+            color: #757575;
+          }
+        }
+      }
+      button {
+        font: 600 16px "Montserrat";
+        display: block;
+        width: 143px;
+        height: 44px;
+        border-radius: 100px;
+        border-width: 0;
+        background-color: #c3dce3;
+        color: #2b788b;
+      }
+    }
+    .boxLessons {
+      width: max-content;
+      background-color: white;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      padding: 15px;
+    }
+    h1 {
+      font: 400 32px "Dela Gothic One";
+    }
+    ol {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      li {
+        font: 600px 16px "Montserrat";
+        list-style-type: none;
+      }
+    }
+  }

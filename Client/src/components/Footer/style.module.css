@@ -1,88 +1,86 @@
-.wrapper {
-    margin: auto;
+.wrapper{
     width: 1220px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.wrapper .infoFooter {
+    margin: auto;
+  }
+  
+  .wrapper .paragrafs {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-}
-
-.wrapper .infoFooter .navigation,
-.wrapper .infoFooter .names {
+  }
+  
+  .wrapper .paragrafs .home {
     display: flex;
     grid-gap: 30px;
-}
-
-.wrapper .infoFooter .navigation p,
-.wrapper .infoFooter .names p {
+  }
+  
+  .wrapper .paragrafs .home p {
     color: var(--Primaty-Grey-Dark, #757575);
     font: 600 14px "Montserrat";
-}
-
-
-.wrapper .line {
-    border-top: 1.205px solid var(--Primaty-Grey-Medium, #E0E0E0);
+  }
+  
+  .wrapper .paragrafs .nameStudents {
+    display: flex;
+    grid-gap: 30px;
+  }
+  
+  .wrapper .paragrafs .nameStudents p {
+    color: var(--Primaty-Grey-Dark, #757575);
+    font: 600 14px "Montserrat";
+  }
+  
+  .wrapper .stroke {
+    border: 1.2px solid #e6e5e5;
     margin-top: 20px;
-}
-
-.wrapper .allLitleImg {
+  }
+  
+  .wrapper .yootube {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     margin-top: 20px;
-}
-
-.wrapper .allLitleImg .img {
+  }
+  
+  .wrapper .yootube .img {
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    gap: 30px;
-}
-
-.wrapper .allLitleImg .catImg,
-.wrapper .allLitleImg .GTimg,
-.wrapper .allLitleImg .youtubeImg {
+    grid-gap: 30px;
+  }
+  
+  .wrapper .yootube .img1 {
+    background-image: url(./assets/catImg.png);
     background-repeat: no-repeat;
     background-size: contain;
     width: 30px;
     height: 24px;
-}
-
-.wrapper .allLitleImg .catImg {
-    background-image: url(./assets/catImg.png);
-}
-
-.wrapper .allLitleImg .GTimg {
+  }
+  
+  .wrapper .yootube .img2 {
     background-image: url(./assets/GTimg.png);
-}
-
-.wrapper .allLitleImg .youtubeImg {
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 30px;
+    height: 24px;
+  }
+  
+  .wrapper .yootube .img3 {
     background-image: url(./assets/youtubeImg.png);
-}
-
-.wrapper .allLitleImg .projectFooter {
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 30px;
+    height: 24px;
+  }
+  
+  .wrapper .yootube .project {
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
     grid-gap: 5px;
- 
-}
-
-.wrapper .allLitleImg .projectFooter p {
+  }
+  
+  .wrapper .yootube .project p {
     color: var(--Primaty-Grey-Dark, #757575);
-    font: 600 12px Montserrat;
-    margin-right: 5px;
-    align-items: center;
-}
-
-.wrapper .allLitleImg .projectFooter .hschool {
+    font: 600 12px "Montserrat";
+  }
+  
+  .wrapper .yootube .project .hschool {
     color: var(--Primaty-Grey-Dark, #757575);
-    font: 600 12px Montserrat;
-    text-decoration-line: underline; 
-    align-items: center;
-}
+    font: 600 12px "Montserrat";
+    text-decoration-line: underline;
+  }

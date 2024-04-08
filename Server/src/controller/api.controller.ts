@@ -11,22 +11,25 @@ route.post('/reg', async (req: Request, res: Response) => {
         const { name, surname, email, pwd } = req.body
         const data = await registrationUser(name, surname, email, pwd)
         buildResponse(res, 200, data)
-    } catch (error:any) {
+    } catch (error: any) {
         buildResponse(res, 404, error.message)
     }
 })
 
-route.post('/auth', async (req: Request, res: Response)=>{
+route.post('/auth', async (req: Request, res: Response) => {
     try {
-        const {email, pwd } = req.body
-        const data = await authUser(email, pwd)
-        const token = createToken(data)
-        res.setHeader('authorization',[createToken(data)])
-        buildResponse(res, 200, data)
-    } catch (error:any) {
-        buildResponse(res, 404, error.message)
+        const { email, pwd } = req.body;
+        const data = await authUser(email, pwd);
+        const token = createToken(data);
+        res.cookie('Bearer', token, {
+            httpOnly: false,
+            secure: true,
+        });
+        buildResponse(res, 200, data);
+    } catch (error: any) {
+        buildResponse(res, 404, error.message);
     }
-})
+});
 
 export default route;
 

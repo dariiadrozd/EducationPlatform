@@ -1,9 +1,11 @@
 
-
-    function Input({el}) {
+    function Input({el,setInp, inp}) {
+        function changeInput(e){
+            setInp({ ...inp, [e.target.name]: e.target.value })
+        }
         return (
             <>
-                <div><input type={el.inputType} placeholder={el.placeholderValue}></input></div>
+                <div><input name={el.name} placeholder={el.placeholderValue} onChange={changeInput}></input></div>
             </>
         )
     }

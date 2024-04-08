@@ -50,6 +50,9 @@ async function updateCourseDB(id: number, course: string): Promise<iCourses[]> {
       console.log(`deleteCourseByIdDB:${error.message}`);
       return [];
     }
+    finally {
+      client.release();
+    }
   }
   
 
